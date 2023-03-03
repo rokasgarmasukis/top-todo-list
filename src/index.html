@@ -7,7 +7,33 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
-    <h1><%= htmlWebpackPlugin.options.title %></h1>
-    <p>test</p>
+    <nav></nav>
+    <div class="content">
+      <div class="sidebar">
+        <div class="due-date"></div>
+      </div>
+      <div class="tasks">
+        <button id="new-task">New Task</button>
+        <div class="new-task-form hidden">
+          <form>
+            <div class="text-input-fields">
+              <div>
+                <input type="text" placeholder="Title..." class="form-input" />
+              </div>
+              <div class="textarea">
+                <textarea
+                  placeholder="Description..."
+                  class="form-input"
+                ></textarea>
+              </div>
+            </div>
+            <div>
+              <button id="add-task">Add Task</button>
+            </div>
+          </form>
+        </div>
+        <div class="task-list"></div>
+      </div>
+    </div>
   </body>
 </html>
