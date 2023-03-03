@@ -25,6 +25,7 @@ body {
 
 .tasks {
   padding: 10px;
+  flex-grow: 1;
 }
 
 .text-input-fields {
@@ -53,7 +54,9 @@ button {
   padding: 5px 15px;
 }
 
-
+.task-list {
+  border-top: 1px solid gray;
+}
 
 
 
